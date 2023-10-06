@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Wonder Paints</title>
+</head>
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .header {
+        width: 100%;
+        height: 70px;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .logo {
+        font-size: 30px;
+        color: black;
+        font-weight: bold;
+        font-style: italic;
+        font-family: "acumin-pro", "Acumin Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+
+    .nav .val{
+        display: inline-flex;
+      
+        list-style: none;
+    }
+
+    .nav ul li a {
+        font-family: "acumin-pro", "Acumin Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        text-align: center;
+        display:inline-flex;
+        text-decoration: none;
+        color: black;
+        font-weight: bolder;
+        font-size: 20px;
+        margin-left: 20px;
+    }
+
+    .banner {
+        width: 100%;
+    }
+
+    .main .content h1 {
+        position: absolute;
+        color: white;
+        top: 75%;
+        left: 15%;
+        font-size: 70px;
+        text-align: center;
+    }
+
+    .main h1 {
+        text-align: center;
+        margin-top: 50px;
+        font-size: 40px;
+        color: black;
+        font-weight: bold;
+    }
+
+    .main .images {
+        width: 30%;
+        display: flex;
+        align-items: center;
+        margin-left: 50px;
+        gap: 10px;
+        margin-top: 50px;
+    }
+
+    .main .image {
+        width: 30%;
+        display: flex;
+        align-items: center;
+        margin-left: 50px;
+        gap: 10px;
+        margin-top: 50px;
+    }
+
+    .main h1 {
+        text-align: center;
+        margin-top: 50px;
+        font-size: 40px;
+        color: black;
+        font-weight: bold;
+    }
+
+    .main p {
+        text-align: center;
+        margin-top: 40px;
+        font-size: 25px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .menu {
+        display: none;
+    }
+    .footer{
+        width: 100%;
+        height: fit-content;
+        margin-top: 20px;
+        background-color: rgb(255, 105, 105);
+    }
+    .footer .icon{
+        font-size: 50px;
+        align-items: center;
+        color: white;
+    }
+
+    @media screen and (max-width:500px) {
+
+        .nav {
+            position: absolute;
+
+        }
+
+        .nav .val {
+            list-style-type: none;
+            display: flex;
+            flex-direction: column;
+            opacity: 0;
+
+        }
+
+        .menu {
+            display: block;
+            margin-left: 250px;
+        }
+
+        .jsclass {
+            display: block;
+            opacity: 1 !important;
+        }
+
+        .logo {
+            margin-right: 90px;
+        }
+
+        .content h1 {
+            position: absolute;
+            color: white;
+            top: 75%;
+            left: 15%;
+            font-size: 70px;
+            text-align: center;
+        }
+
+
+
+
+    }
+</style>
+
+<body>
+    <div class="header">
+        <div class="logo">
+            Wonder Paints
+        </div>
+        <div class="nav">
+            <ul class="val">
+                <li>
+                    <a href="index.html">Home</a></li>
+                    <li><a href="work.html">Work</a></li>
+                    <li><a href="worksitem.html">WorksItem</a></li>
+                    <li><a href="about.html">About</a>
+                </li>
+            </ul>
+            <div class="menu" onclick="clicks()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="main">
+        <img src="./images/im4.jpg" width="100%">
+        <div class="content">
+            <h1>Welcome to A Painter's Web!</h1>
+        </div>
+    </div>
+    <div class="main">
+        <h1>Currently Popular Works </h1>
+        <div class="images">
+            <img onClick="Text(1)" src="./images/imm.jpg" width="100%">
+            <img onClick="Text(2)" src="./images/im2.jpg" width="100%">
+            <img onClick="Text(3)" src="./images/im3.jpg" width="100%">
+        </div>
+        <div class="image">
+            <img src="./images/imm1.jpg" width="100%">
+            <img src="./images/im5.jpg" width="100%">
+            <img src="./images/im6.jpg" width="100%">
+        </div>
+    </div>
+    <div class="main">
+        <h1>About Us</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna
+            aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut
+            aliquid ex ea commodi consequatur. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu
+            fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident,
+            sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+   <div class="footer">
+    <div class="icon">
+        <i class="fa-brands fa-square-facebook"></i>
+        <i class="fa-brands fa-square-instagram"></i>
+        <i class="fa-brands fa-square-twitter"></i>
+    </div>
+    <div class="text" style="color: white;display: flex;align-items: center;font-size:15px;">
+        <h1>contact no:+91 28768787236</h1><br>
+        <h1>email:wonderpaints@gmail.con</h1>
+    </div>
+   </div>
+    <script>
+        let menu = document.querySelector(".menu");
+        let ul = document.querySelector("ul");
+        function clicks() {
+            ul.classList.toggle("jsclass");
+        }
+    </script>
+</body>
+
+</html>
